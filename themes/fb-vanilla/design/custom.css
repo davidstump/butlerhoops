@@ -1,0 +1,77 @@
+a,
+a:link,
+a:visited,
+a:active {
+   text-decoration: none;
+   color: #3B5998;
+}
+a:hover {
+   text-decoration: underline;
+}
+
+#Head {
+	background: #34519C;
+}
+
+#Head h1 a span {
+	color: #EFEFEF;
+	text-shadow: none;
+}
+
+div.MessageForm, div.Tabs {
+	background: #D8DFEA;
+	border-bottom: 1px solid #E2E2E2;
+/*	border-bottom: 1px solid #34519C;*/
+}
+
+div.MorePager a, div.MorePager a:link, div.MorePager a:hover, div.MorePager a:active, div.MorePager a:visited, a.TabLink, a.TabLink:link, a.TabLink:hover, a.TabLink:active, a.TabLink:visited, div.Tabs li a, div.Tabs li a:link, div.Tabs li a:hover, div.Tabs li a:active, div.Tabs li a:visited {
+	background: #D8DFEA;
+	color: #3B5998;
+	border: 1px solid #E2E2E2;
+}
+a.Active, div.Tabs li.Active a {
+	background: #F2F2F2;
+	color: #3B5998;
+	border: 1px solid #E2E2E2;
+}
+div.Tabs li a:hover {
+	text-decoration: underline;
+	color #000;
+}
+
+div.MessageForm, div.Tabs {
+	background: #F7F7F7;
+	border-bottom: 1px solid #E2E2E2;
+}
+
+.Mine {
+	background: #FFF;
+}
+.Alt {
+	background: #FFF;
+}
+
+ul.MessageList li.Mine {
+   background: #FFF;
+}
+
+div.Box {
+	background: #D8DFEA;
+}
+ul.PanelInfo li {
+	background: #FAFAFA;
+	border-bottom: 1px solid #E2E2E2;
+}
+ul.PanelInfo {
+	border-top: 1px solid #E2E2E2;
+}
+ul.PanelInfo li.Active {
+	color: #6C6C6C;
+	border-bottom: 1px solid #E2E2E2;
+}
+ul.PanelInfo li.Active a {
+	color: #3B5998;
+}
+ul.PanelInfo li.Active a:hover {
+	text-decoration: underline;
+}
