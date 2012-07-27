@@ -222,10 +222,25 @@ class FacebookPlugin extends Gdn_Plugin {
 //      curl_setopt($C, CURLOPT_URL, $Url);
 //      $Contents = curl_exec($C);
 //      $Contents = ProxyRequest($Url);
-      $Contents = file_get_contents($Url);
+      $Contents = file_get_contents_curl($Url);
       $Profile = json_decode($Contents, TRUE);
       return $Profile;
    }
+   
+   	function file_get_contents_curl($url) {
+		$ch = curl_init($url);
+		
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+		curl_setopt($ch, CURLOPT_HEADER, 0);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); //Set curl to return the data instead of printing it to the browser.
+		curl_setopt($ch, CURLOPT_URL, $url);
+		
+		$data = curl_exec($ch);
+		curl_close($ch);
+		
+		return $data;
+	}
 
    public function AuthorizeUri($Query = FALSE) {
       $AppID = C('Plugins.Facebook.ApplicationID');
