@@ -118,7 +118,7 @@
 					Powered by <a target="_blank" href="http://vanillaforums.org"><b>Vanilla.</b></a>
 					Made with <a target="_blank" href="http://getbootstrap.com"><b>Bootstrap.</b></a>
 					<br>
-					Theme built by <a href="https://github.com/kasperisager"><b>Kasper Kronborg Isager</b></a>
+					Site built by <a href="http://davidstump.net">David Stump</a>.
 					<!-- Feel free to delete my name from the list, but please keep both the Vanilla and Bootstrap notices -->
 				</div>
 			</div>
