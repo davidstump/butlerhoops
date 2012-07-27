@@ -21,7 +21,7 @@ $Configuration['Database']['CharacterEncoding']                = 'utf8';
 $Configuration['Database']['DatabasePrefix']                    = 'GDN_';
 $Configuration['Database']['ExtendedProperties']['Collate']     = 'utf8_unicode_ci';
 
-$Configuration['Cache']['Enabled']                              = TRUE;
+$Configuration['Cache']['Enabled']                              = FALSE;
 $Configuration['Cache']['Method']                               = 'dirtycache';
 $Configuration['Cache']['Filecache']['Store']                   = PATH_LOCAL_CACHE.'/Filecache';
 
@@ -37,7 +37,7 @@ $Configuration['Garden']['WebRoot']                             = FALSE; // You 
 $Configuration['Garden']['StripWebRoot']                        = FALSE;
 $Configuration['Garden']['Debug']                               = FALSE;
 $Configuration['Garden']['RewriteUrls']                         = FALSE;
-$Configuration['Garden']['Session']['Length']                   = '15 minutes';
+$Configuration['Garden']['Session']['Length']                   = '60 minutes';
 $Configuration['Garden']['Cookie']['Salt']                      = '';
 $Configuration['Garden']['Cookie']['Name']                      = 'Vanilla';
 $Configuration['Garden']['Cookie']['Path']                      = '/';
