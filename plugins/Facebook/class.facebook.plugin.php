@@ -187,7 +187,6 @@ class FacebookPlugin extends Gdn_Plugin {
       // Get the profile.
       try {
          $Profile = $this->GetProfile($AccessToken);
-		 print_r($Profile);
       } catch (Exception $Ex) {
          if (!isset($NewToken)) {
             // There was an error getting the profile, which probably means the saved access token is no longer valid. Try and reauthorize.
