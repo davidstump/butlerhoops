@@ -222,7 +222,7 @@ class FacebookPlugin extends Gdn_Plugin {
 //      curl_setopt($C, CURLOPT_URL, $Url);
 //      $Contents = curl_exec($C);
 //      $Contents = ProxyRequest($Url);
-      $Contents = file_get_contents_curl($Url);
+      $Contents = $this->file_get_contents_curl($Url);
       $Profile = json_decode($Contents, TRUE);
       return $Profile;
    }
